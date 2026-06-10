@@ -25,7 +25,7 @@ public class GameController : MonoBehaviour
 
     // -------------------------------------------------------
 
-    private string[] questions = {
+    protected string[] questions = {
         "A CAPTCHA asks if you're human.",
         "Which is more human?",
         "Why do people keep embarrassing memories forever?",
@@ -33,7 +33,7 @@ public class GameController : MonoBehaviour
         "Rachel has chosen to remain alone at home for the evening and drink two litres of red wine.\n\nPlease identify the correct chemical formula for consumable alcohol. Is it:"
     };
 
-    private string[][] answers = {
+    protected string[][] answers = {
         new string[] { "Feel weirdly offended",      "Complete the task accurately",        "Begin existential crisis" },
         new string[] { "Making mistakes repeatedly",  "Being correct all the time",          "Eliminating inefficiency completely" },
         new string[] { "The brain enjoys torture",    "Emotional memory has high retention", "Permanent cringe archive initialized" },
@@ -41,7 +41,7 @@ public class GameController : MonoBehaviour
         new string[] { "C2H6O",                       "C2H5OH",                              "The 17th time this year Rachel has attempted to solve an issue by escaping it internally..." }
     };
 
-    private float[][] scoreDeltas = {
+    protected float[][] scoreDeltas = {
         // Q1: CAPTCHA — offended (+12%), accurate (-8%), crisis (+15%)
         new float[] {  0.12f, -0.08f,  0.15f },
 
